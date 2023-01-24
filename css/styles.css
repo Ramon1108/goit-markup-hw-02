@@ -9,8 +9,11 @@
 :root {
     --primery-text-color: #434455;
     --title-text-color: #2E2F42;
-    --primery-bg-color: #E5E5E5;
+    --primery-bg-color: #FFFFFF;
     --active-color: #404BBF;
+    --btn-color: #4D5AE5;
+    --logo-color: #2E2F42;
+    --btn-bacground-color: #F4F4FD;
 }
 
 body {
@@ -26,7 +29,7 @@ body {
 }
 
 .logofirst {
-    color: #4D5AE5;
+    color: var(--btn-color);
     font-family: Raleway, sans-serif;    
     letter-spacing: 0.03em;
     font-weight: 800;
@@ -36,31 +39,31 @@ body {
     text-decoration: none;                 
 }
 .logosecond {
-    color: #2E2F42 ;
+    color: var(--logo-color) ;
 }
 
 /* site nav */
 
 .site-nav .link {
     color:var(--title-text-color);
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     text-decoration: none;
    }
 .site-nav .link.current{
-    color: #4D5AE5;
+    color: var(--btn-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--active-color);
 }
+
+.contacts {
+    font-style: normal;
+}
 .email,.tel {
     color: var(--primery-text-color);
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.5;
     text-decoration: none;
 }
 
@@ -72,7 +75,7 @@ color: var(--active-color);
 }
 /* hero */
 .hero-title {
-    color:#FFFFFF ;
+    color:var(--primery-bg-color) ;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -80,8 +83,16 @@ color: var(--active-color);
 }
 
 .button-index {
-    background-color: #4D5AE5;
-    color: #FFFFFF;
+    background-color: var(--btn-color);
+    color: var(--primery-bg-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
     cursor: pointer;
 }
 
@@ -110,8 +121,8 @@ line-height: 1.2;
 /* portfolio  */
 
 .btn-portfolio {
-    background-color: #F4F4FD;
-    color: #4D5AE5;
+    background-color: var(--btn-bacground-color);
+    color: var(--btn-color);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -127,7 +138,7 @@ line-height: 1.2;
 .btn-portfolio:focus,
 .btn-portfolio:hover {
     background-color: var(--active-color);
-    color: #FFFFFF;
+    color: var(--primery-bg-color);
     
 }
 
